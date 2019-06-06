@@ -47,4 +47,21 @@ dependencies {
     // ViewModel and LiveData
     def lifecycle_version = '2.1.0-alpha03'
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    //gson converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+    //RxJava
+    def rxJava_version = "2.2.9"
+    implementation "io.reactivex.rxjava2:rxjava:$rxJava_version"
+
+    //Retrofit rxjava adapter help convert Call object to Observable or Flowable
+    def adapter_rxjava2 = "2.6.0"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$adapter_rxjava2"
+
+    // Reactive Streams (convert Observable to LiveData)
+    def reactivestreams_version = "1.1.1"
+    implementation "android.arch.lifecycle:reactivestreams:$reactivestreams_version"
 }
