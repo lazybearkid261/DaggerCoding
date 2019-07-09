@@ -4,17 +4,14 @@ import android.util.Log;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.LiveDataReactiveStreams;
-import androidx.lifecycle.MediatorLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.example.daggercoding.SessionManager;
-import com.example.daggercoding.di.network.auth.AuthApi;
+import com.example.daggercoding.network.auth.AuthApi;
 import com.example.daggercoding.models.User;
 
 import javax.inject.Inject;
 
-import io.reactivex.Observer;
-import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 

@@ -1,6 +1,6 @@
 package com.example.daggercoding.di.auth;
 
-import com.example.daggercoding.di.network.auth.AuthApi;
+import com.example.daggercoding.network.auth.AuthApi;
 
 import dagger.Module;
 import dagger.Provides;

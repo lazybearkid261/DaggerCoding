@@ -5,6 +5,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -49,6 +50,12 @@ public class AuthActivity extends DaggerAppCompatActivity implements View.OnClic
 //
 //    @Inject
 //    boolean isAppNull;
+
+
+    @Override
+    public ComponentName startService(Intent service) {
+        return super.startService(service);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
